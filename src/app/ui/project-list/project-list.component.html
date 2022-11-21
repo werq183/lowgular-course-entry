@@ -1,0 +1,18 @@
+<h1>Projects</h1>
+<div>
+  <table style="text-align: left; width: 50%">
+    <tr>
+      <th>Id</th>
+      <th>Name</th>
+      <th>Owner</th>
+      <th>Description</th>
+    </tr>
+    <tr *ngFor="let project of data$ | async ">
+      <td>{{project.id}}</td>
+      <td>{{project.name}}</td>
+      <td>{{project.owner}}</td>
+      <td>{{project.description}}</td>
+    </tr>
+  </table>
+</div>
+<ng-template #empty> There is no data </ng-template>
