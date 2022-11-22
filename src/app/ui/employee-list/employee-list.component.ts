@@ -14,4 +14,8 @@ export class EmployeeListComponent {
   constructor(private _employeeService: EmployeeService) { }
   data$: Observable<PersonModel[] | null> = this._employeeService.getAll();
   title$: string = "My (not so) supper app";
+
+  remove(id:string){
+    this._employeeService.delete(id).subscribe();
+  }
 }
