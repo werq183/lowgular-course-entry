@@ -1,3 +1,4 @@
+<h1>Create new employee</h1>
 <form [formGroup]="employeeForm" (ngSubmit)="onButtonClicked(employeeForm.value); onFormSubmitted(employeeForm.value)">
   <input type="text" formControlName="name" placeholder="Name">
   <input type="number" formControlName="age" placeholder="Age">
@@ -9,6 +10,9 @@
 </div>
 
 <style>
+  h1{
+    margin-bottom: 7vh;
+  }
   input{
     margin-bottom: 5vh;
     display: flex;
