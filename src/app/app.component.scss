@@ -1,0 +1,28 @@
+// Variable overrides first
+$primary: #900;
+$enable-shadows: true;
+$prefix: "mo-";
+
+// Then import Bootstrap
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+body{
+  background-image: linear-gradient(to bottom right, #427d6f, #0e8065);
+  font-family: Inter, Arial;
+  color: #afdbd1;
+}
+
+.container{
+  display: flex;
+  width: 100%;
+  height: auto;
+  align-items: center;
+}
+
+
+.form{
+  display: flex;
+  align-items: center;
+  margin-left: 10vw;
+
+}

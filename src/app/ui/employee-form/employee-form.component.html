@@ -2,7 +2,7 @@
   <input type="text" formControlName="name" placeholder="Name">
   <input type="number" formControlName="age" placeholder="Age">
   <input type="number" formControlName="salary" placeholder="Salary">
-  <input type="submit" [disabled]="employeeForm.invalid" value="Submit">
+  <input class="submit" type="submit" [disabled]="employeeForm.invalid" value="Submit">
 </form>
 <div *ngIf="employeeForm.valid">
   Your new employee:  {{employeeForm.value.name}}, age: {{employeeForm.value.age}} with salary {{employeeForm.value.salary}} $ will be added to the system.
@@ -10,6 +10,15 @@
 
 <style>
   input{
-    margin-right: 15px;
+    margin-bottom: 5vh;
+    display: flex;
+    width: 15vw;
+    height: 8vh;
+    border-radius: 8px;
+    border: 1px solid #afdbd1;
+    color: #33403d;
+  }
+  .submit{
+    background-image: linear-gradient(to bottom right, #afdbd1 ,#0e8065);
   }
 </style>

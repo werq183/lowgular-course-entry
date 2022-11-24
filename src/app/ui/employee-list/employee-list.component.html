@@ -11,22 +11,38 @@
       <td>{{ employee.personalNumber }}</td>
       <td>{{ employee.name }}</td>
       <td>{{employee.mail}}</td>
-      <td><button (click)="remove(employee.personalNumber)">Remove</button></td>
+      <td><button class="remove" (click)="remove(employee.personalNumber)">Remove</button></td>
     </tr>
   </table>
 </div>
 <style>
-  table, th, td{
-    border: 1px solid black;
+  h1{
+    text-align: center;
+  }
+  button{
+    background-image: linear-gradient(to bottom right, #427d6f, #0e8065);
+    color: #afdbd1;
+    border-radius: 5px;
+    border: none;
+  }
+  td{
+    border-left: 1px solid black;
+    border-top: 1px solid black;
   }
   table{
-    text-align: left;
-    width: 50%;
+    width: 100%;
+    text-align: center;
     margin-bottom: 20px;
-    border-collapse: collapse;
+    border-collapse: separate;
+    border: 1px solid black;
+    border-radius: 4px;
+    background-color: #33403d;
   }
   th{
-    background-color: azure;
+    border-left: 1px solid black;
+  }
+  td:first-child, th:first-child {
+    border-left: none;
   }
 </style>
 
